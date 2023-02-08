@@ -4,7 +4,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Datascope Spec",
     "type": "object",
-    "required": ["api_key", "form_id", "start_date"],
+    "required": ["api_key", "start_date"],
     "additionalProperties": false,
     "properties": {
       "api_key": {
@@ -20,7 +20,8 @@
       },
       "form_id": {
         "type": "string",
-        "description": "You can find the form ID on the URL at the moment to edit a form (https://mydatascope.com/task_forms/FORM_ID/edit)."
+        "description": "Add multiples IDs or leave blank yo sync all forms (https://mydatascope.com/task_forms/FORM_ID/edit).",
+        "examples": ["ID1, ID2, ID3"]
       },
       "schema_type": {
         "type": "string",
